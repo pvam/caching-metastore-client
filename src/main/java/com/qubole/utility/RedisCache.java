@@ -186,7 +186,8 @@ public class RedisCache<K, V> extends AbstractLoadingCache<K, V> implements Load
 
       Map<K, V> map = new LinkedHashMap<>();
       int i = 0;
-      // mget always return an array of keys size. Each entry would correspond the key of that index.
+      // mget always return an array of keys size.
+      // Each entry would correspond the key of that index.
       // if no such key exists vaue will be null.
 
       for (Object key : keys) {
